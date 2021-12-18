@@ -15,35 +15,27 @@ const Login = () => {
           width={200}
           height={200}
         /> */}
-        <div className="animate-pulse">
+        <div className="animate-pulse text-pink-200 text-center">
           <h1 className="text-3xl font-bold text-pink-200 py-1 px-5 drop-shadow-xl font-serif">
-            WELCOME TO THE MATRIX
+            WELCOME TO TRON
           </h1>
+          <p>Let's chat together</p>
         </div>
 
         {isAuthenticating ? (
-          <div className="bg-pink-600 rounded-xl p-5  font-bold   transition-all duration-500 border-x-2 drop-shadow-xl text-white flex">
-            <h1 className="pr-5">Authenticate with your Metamask</h1>
-            <svg
-              className="animate-pulse"
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 5l7 7-7 7M5 5l7 7-7 7"
-              />
-            </svg>
+          <div className="text-sm md:text-base bg-pink-600 rounded-xl p-5  font-bold   transition-all duration-500 border-x-2 drop-shadow-xl text-white flex justify-center items-center">
+            <h1 className="pr-2 sm:pr-5 text-center">
+              Authenticate with your Metamask
+            </h1>
+            {'  '}
+            {'>'}
+            {'>'}
+            {'>'}
           </div>
         ) : (
           <button
             onClick={authenticate}
-            className="bg-pink-600 rounded-xl p-5  font-bold  hover:scale-105 transition-all duration-500 border-x-2 drop-shadow-xl text-white"
+            className=" text-sm bg-pink-600 rounded-xl p-5  font-bold  hover:scale-105 transition-all duration-500 border-x-2 drop-shadow-xl text-white"
           >
             Login with you Metamask
           </button>

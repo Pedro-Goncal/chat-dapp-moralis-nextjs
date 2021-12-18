@@ -18,7 +18,7 @@ const Message = ({ message }) => {
         <Avatar username={message.get('username')} />
       </div>
       <div
-        className={`flex space-x-4 p-3 rounded-lg ${
+        className={`flex space-x-4 p-1 sm:p-3 rounded-lg ${
           isUserMessage
             ? 'rounded-br-none bg-pink-300'
             : 'rounded-bl-none bg-blue-400'
@@ -30,7 +30,7 @@ const Message = ({ message }) => {
       {/* TimeStamp */}
       <TimeAgo
         datetime={message.createdAt}
-        className={`text-[10px] italic text-gray-400 ${
+        className={`hidden sm:inline text-[10px] italic text-gray-400 ${
           isUserMessage && 'order-first pr-1 '
         }`}
       />

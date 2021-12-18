@@ -32,11 +32,11 @@ const ChangeUsername = () => {
 
   return (
     <div>
-      <div className="text-sm absolute top-5 right-5">
+      <div className="text-sm sm:absolute sm:top-5 sm:right-5">
         <button
           disabled={isUserUpdating}
           onClick={() => setShowModal(true)}
-          className="py-4 px-6 m-2 bg-fuchsia-300 rounded-xl hover:text-pink-700 font-bold transition-all duration-500"
+          className="py-3 px-4 my-2 sm:m-2 text-white bg-fuchsia-600 rounded-xl hover:text-pink-400 font-bold transition-all duration-500"
         >
           <p className="hover:animate-pulse">Change your username</p>
         </button>
@@ -69,8 +69,8 @@ const ChangeUsername = () => {
                   <div>
                     <input
                       type="text"
-                      placeholder="Username"
-                      className=" w-full rounded-lg p-2 bg-fuchsia-100"
+                      placeholder="New user name"
+                      className=" w-full rounded-lg p-2 bg-fuchsia-100 outline-none bg-transparent"
                       onChange={(e) => setUsername(e.target.value)}
                     />
                   </div>
